@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Json & Ajax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #main {
+            display: flex;
+            max-width: 700px;
+            margin: 50px auto;
+            justify-content: space-between;
+        }
+        #btn{
+            width: 120px;
+            color: #fff;
+            background: #0000ff;
+            border: none;
+            height: 42px;
+        }
+        #displayInfo {
+            max-width: 650px;
+            margin: 50px auto;
+        }
+        p {
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 2;
+        }
+        .finalOutput {
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+        .finalOutput li {
+            list-style: none;
+            margin: 5px 0 0 10px;
+        }
+        @media(max-width: 500px){
+            h1 {
+                font-size: 19px;
+                margin: 0 20px;
+                text-align: center;
+            }
+            #btn {
+                margin-right: 10px;
+                width: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Load some GitHub users</h1>
+        <button id="btn">Fetch</button>
+    </div>
+
+    <div id="displayInfo"></div>
+    <script src="app.js"></script>
+</body>
+</html>
